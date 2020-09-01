@@ -1,0 +1,48 @@
+package lambdademo.model;
+
+import lambdademo.lambdainterface.LambdaInterface;
+
+import java.util.List;
+
+/**
+ * @author wangli
+ * @date 2020/9/1 17:04
+ */
+public class Person {
+
+    private String name;
+
+    private Integer age;
+
+
+
+    public Person(Integer age,String name) {
+        this.name = name;
+        this.age = age;
+
+    }
+
+    public Person() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public void printAve(LambdaInterface lambdaInterface, List<Person> personList){
+        // 打印策略返回的字符串
+        System.out.println(lambdaInterface.returnAve(personList));
+    }
+}
