@@ -15,11 +15,9 @@ public class Person {
     private Integer age;
 
 
-
     public Person(Integer age,String name) {
         this.name = name;
         this.age = age;
-
     }
 
     public Person() {
@@ -41,7 +39,7 @@ public class Person {
         this.age = age;
     }
 
-    public void printAve(LambdaInterface lambdaInterface, List<Person> personList){
+    public static void printAve(LambdaInterface lambdaInterface, List<Person> personList){
         // 打印策略返回的字符串
         System.out.println(lambdaInterface.returnAve(personList));
     }

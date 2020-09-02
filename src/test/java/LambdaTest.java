@@ -26,8 +26,7 @@ public class LambdaTest {
      */
     @Test
     public void getLambdaPersonByFunction(){
-        Person person = new Person();
-        person.printAve(new MostSurnameImpl(),personList);
+        Person.printAve(new MostSurnameImpl(),personList);
     }
 
     /**
@@ -35,7 +34,12 @@ public class LambdaTest {
      */
     @Test
     public void getLambdaPersonByCustom(){
-        Person person = new Person();
-        person.printAve(personList-> personList.get(0).toString(),personList);
+        Person.printAve(personList-> personList.get(0).toString(),personList);
     }
+
+    @Test
+    public void test1(){
+
+    }
+
 }
