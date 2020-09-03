@@ -39,8 +39,4 @@ public class Person {
         this.age = age;
     }
 
-    public static void printAve(LambdaInterface lambdaInterface, List<Person> personList){
-        // 打印策略返回的字符串
-        System.out.println(lambdaInterface.returnAve(personList));
-    }
 }
